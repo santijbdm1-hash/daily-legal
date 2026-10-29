@@ -1,0 +1,49 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: #f6f5f0; color: #2d2a32;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+}
+@media (prefers-color-scheme: dark) {
+  body { background: #1a1a1f; color: #f2f0ea; }
+  .card { background: #24242b; border-color: #35353e; }
+  .muted, li, p { color: #b9b5ad; }
+  h1, h2, h3 { color: #f2f0ea; }
+  a { color: #a99fff; }
+  .note { background: #2d2d36; border-color: #41414c; }
+  .step { background: #2d2d36; border-color: #41414c; }
+  code { background: #35353e; color: #f2f0ea; }
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 28px 20px 64px; }
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+.brand .mark {
+  width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center;
+  background: #6c5ce7; color: #f6f5f0; font-size: 20px;
+}
+.brand strong { font-size: 18px; letter-spacing: -0.01em; }
+.card {
+  background: #fff; border: 1px solid #e7e4de; border-radius: 18px;
+  padding: 28px 24px; box-shadow: 0 12px 40px rgb(0 0 0 / 6%);
+}
+h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: -0.02em; }
+.updated { margin: 0 0 26px; color: #7a756c; font-size: 14px; }
+h2 { margin: 28px 0 8px; font-size: 19px; letter-spacing: -0.01em; }
+h3 { margin: 22px 0 6px; font-size: 16px; }
+p { margin: 0 0 12px; }
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin-bottom: 6px; color: #4c4842; }
+a { color: #5b4bd6; }
+.note {
+  margin: 20px 0; padding: 14px 16px; border-radius: 12px;
+  background: #f3f1fb; border: 1px solid #e2ddf8; font-size: 15px;
+}
+.step {
+  margin: 14px 0; padding: 14px 16px; border-radius: 12px;
+  background: #f3f1fb; border: 1px solid #e2ddf8; font-size: 15px;
+}
+code { background: #f0ede8; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+.footer-links { margin-top: 26px; color: #7a756c; font-size: 14px; }
+.footer-links a { margin-right: 10px; }
+.legal-nav { margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 14px; }
+.legal-nav a { text-decoration: none; }
