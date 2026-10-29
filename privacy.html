@@ -35,7 +35,7 @@
       <p>This policy applies to the My Journal Android app. The app is installed from Google Play and runs from files bundled inside the app; it does not require an account or a server. It explains what data the app handles and the choices you have.</p>
 
       <h2>1.1 Data controller</h2>
-      <p>The data controller is the developer of My Journal. The developer name and contact email are shown on the app’s Google Play listing. For privacy questions, use that email or open an issue at <a href="https://github.com/santijbdm1-hash/MyJournal/issues" target="_blank" rel="noopener">github.com/santijbdm1-hash/MyJournal/issues</a>. See also the <a href="legal-notice.html">Legal Notice</a>.</p>
+      <p>The data controller is the developer of My Journal. The developer name and contact email are shown on the app’s Google Play listing. For privacy questions, use that email. For general non-private questions, you can open an issue at <a href="https://github.com/santijbdm1-hash/MyJournal/issues" target="_blank" rel="noopener">github.com/santijbdm1-hash/MyJournal/issues</a>; please do not post personal journal content in a public issue. See also the <a href="legal-notice.html">Legal Notice</a>.</p>
 
       <h2>2. What the app stores</h2>
       <p>My Journal stores the information you choose to enter, including:</p>
@@ -54,10 +54,15 @@
 
       <h2>3.1 If you used an earlier cloud version</h2>
       <p>Versions of My Journal before 2.0.0 could sync to Firebase. If you used one, an old copy of your journal may still exist in the old Firebase project. The current app does not read or write that copy. To move it to this device and remove the server copy, use the one-time migration tool in the <a href="https://github.com/santijbdm1-hash/MyJournal" target="_blank" rel="noopener">project repository</a> (<code>tools/migrate-from-firebase.html</code>) to export it, import the backup in Account, and then choose “Delete the old cloud copy”. You can also contact the developer through the email on the Play listing to request deletion of the legacy copy.</p>
+      <p>The legacy copy is not used for any other purpose. The developer will delete it within 30 days of a verified deletion request, or you can delete it immediately with the migration tool.</p>
 
       <h2>4. What leaves the device</h2>
       <p><strong>Nothing, unless you export a backup.</strong> The Export Backup action creates a JSON file on your device. You decide where that file goes (for example, Downloads, a cloud drive or a message to yourself). Backup files are not uploaded by the app.</p>
       <p>The app files, icons and fonts are bundled inside the installed app. Opening the app and saving entries does not require a network connection, and the app does not send journal data anywhere. If you use Android’s Share sheet to send a backup to another app, that app’s own privacy policy applies to the file you chose to share.</p>
+
+      <h2>4.1 This website and Google Play</h2>
+      <p>This legal site is hosted on GitHub Pages. GitHub may process standard request information such as an IP address, browser type and requested page to serve and secure the site. The site does not set cookies, run analytics or load advertising. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub’s privacy statement</a>.</p>
+      <p>Google Play may collect install, device, crash and review data under Google’s own privacy policy when you download or use the app through the store. The developer may see aggregate store statistics, ratings and reviews, but does not receive your journal content through Google Play.</p>
 
       <h2>5. No tracking, ads or analytics</h2>
       <p>My Journal does not use analytics, advertising SDKs, crash-reporting SDKs, tracking pixels or third-party cookies. There is no advertising identifier and no profile of your behaviour. Local storage is used only to remember your journal and preferences on your device.</p>
@@ -67,6 +72,9 @@
 
       <h2>5.2 Legal bases</h2>
       <p>The developer does not receive or process your journal on a server, so there is no server-side processing for which a GDPR legal basis would be needed. On your device, local storage is used because it is strictly necessary to provide the journal functionality you requested. If you choose to share a backup with another app, that transfer is initiated by you and is governed by the recipient’s terms and privacy policy.</p>
+
+      <h2>5.3 No sale, profiling or AI training</h2>
+      <p>The developer does not sell, rent or trade personal data. The app does not build advertising profiles, make automated decisions about you, or use your journal content to train artificial-intelligence models. Because the journal stays on your device, there is no developer-side profile to sell or share.</p>
 
       <h2>6. Notifications and permissions</h2>
       <p>The Android app requests no runtime permissions. It does not request access to your location, camera, microphone, contacts, photos, calendar or health platform. Android declares the internet permission only because the app’s local WebView asset server uses a local origin; the app makes no external requests. Daily-limit reminders are shown inside the app, not sent as push notifications.</p>
@@ -80,14 +88,18 @@
       </ul>
       <p>Because the current app keeps no server copy, deleting the app data is immediate and complete. There is no account to close and no remote deletion request to make for the local journal. If you used a pre-2.0.0 cloud version, also delete the legacy copy as described in section 3.1. Step-by-step instructions are on the <a href="delete-data.html">delete data page</a>.</p>
 
+      <h2>7.1 Retention</h2>
+      <p>Local journal data remains on your device until you delete it in the app, clear the app’s storage or uninstall the app. The developer does not keep a current server copy. A pre-2.0.0 legacy cloud copy is retained only to let you migrate it and is deleted when you use the migration tool or within 30 days of a verified deletion request. Backup files remain wherever you chose to save them until you delete them.</p>
+
       <h2>8. Security</h2>
       <p>Your journal is protected by your device’s own lock screen and app sandbox. The app does not add encryption to the local journal or to exported backups. A backup file is readable JSON, so store it somewhere you trust and delete copies you no longer need.</p>
 
       <h2>9. Children</h2>
-      <p>My Journal is a personal journal intended for adults and teenagers. It is not directed to children under 13, and the developer does not knowingly collect personal information from children.</p>
+      <p>My Journal is a personal journal intended for adults and teenagers. It is not directed to children under 16, and the developer does not knowingly collect personal information from children.</p>
 
       <h2>10. Your rights</h2>
       <p>Because the developer does not receive or store your journal, there is no server-side data to access, correct, export or erase for the current app. You exercise those rights directly on your device through the app’s export, edit and delete controls. If you used a pre-2.0.0 cloud version, the legacy copy described in section 3.1 can be exported and deleted with the migration tool. If you have a question about this policy, contact the developer using the details below.</p>
+      <p>Where data-protection law gives you rights, they may include access, rectification, erasure, restriction, portability, objection and withdrawal of consent. Because the current journal is local, the practical way to exercise access and portability is Export Backup, and the practical way to exercise erasure is Account → Delete all data. You can also contact the developer using the details below.</p>
       <p>If you are in the European Economic Area, the United Kingdom, Switzerland or another jurisdiction with data-protection law, you may also have the right to complain to your local supervisory authority. Because the current app does not send your journal to the developer, there may be no server-side record for an authority to investigate.</p>
       <p>If you are a California resident, the current app does not sell or share personal information as those terms are used by the CCPA/CPRA, and the developer does not receive your journal. You can exercise access, deletion and portability directly in the app through export, edit and delete.</p>
 
@@ -95,7 +107,7 @@
       <p>If the app’s data practices change, this page will be updated and the date at the top will change. Continued use of the app after an update means you accept the revised policy.</p>
 
       <h2>12. Contact</h2>
-      <p>For privacy questions or problems with the app, open an issue at <a href="https://github.com/santijbdm1-hash/MyJournal/issues" target="_blank" rel="noopener">github.com/santijbdm1-hash/MyJournal/issues</a>, or use the developer email address shown on the app’s Google Play listing.</p>
+      <p>For privacy questions or problems with the app, use the developer email address shown on the app’s Google Play listing. For general non-private questions, you can open an issue at <a href="https://github.com/santijbdm1-hash/MyJournal/issues" target="_blank" rel="noopener">github.com/santijbdm1-hash/MyJournal/issues</a>. Please do not post personal journal content in a public issue.</p>
 
       <footer class="footer-links">
         <a href="privacy.html">Privacy</a>
